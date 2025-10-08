@@ -1,0 +1,60 @@
+Máquina virtual Python:
+
+01 - Acessar o terminal
+
+02 - Criar Projeto:
+	django-admin startproject <nome do projeto>
+	
+03 - Instalar o Django	
+	pip install django
+	
+04 - Instalar e Configurar o Pilow para uso de imagens:
+	pip install Pillow	
+------------------------//--------------------------
+		
+01 - Criar banco de dados
+	python manage.py migrate
+	
+02 - Criar usuário e senha
+	python manage.py createsuperuser	
+
+03 - Subindo a máquina virtual
+	python manage.py runserver
+	
+------------------------//--------------------------	
+
+01 - Adicionando a Classe
+	python manage.py startapp <nome da aplicação> 
+	
+02 - Registrando a Aplicação
+	Editar o arquivo setting.py na pasta principal do projeto
+
+03 - Após criar a classe 
+	Atualizar o arquivo admin.py dentro da classe criada.
+
+04 - Gerar arquivo Migrations
+	python manage.py makemigrations
+	
+05 - Efetuar a migração
+	python manage.py migrate
+	
+06 - Ajustar os arquivos quando necessário
+	urls.py
+	settings.py
+
+07 - Subir a Aplicação
+	python manage.py runserver	
+	
+99 - Importando uma aplicação de projetos anteriores(reaproveitando)
+    a) copiar a pasta desejada e colar na raiz do projeto que vai receber
+    b) acessar a pasta Migrations e apagar os arquivos existentes ( não apagar o __init__.py)
+    c) pausar a aplicação
+    d) registar a aplicação no settings.py
+    e) Gerar arquivo Migrations -> python manage.py makemigrations 
+    f) Efetuar a migração -> python manage.py migrate
+	g) Subir a Aplicação com as alterações -> python manage.py runserver
+    
+    
+	
+	
+	
